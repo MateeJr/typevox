@@ -27,9 +27,9 @@ import { useTheme } from 'next-themes';
 import { Check, Copy, WrapText, ArrowLeftRight } from 'lucide-react';
 
 interface StreamingTextProps {
-  text: string; // This will be the incrementally updated full text
+  text: string;
   isAiMessage: boolean;
-  messageId: string; // Used as a key for resetting state when message changes
+  messageId: string;
   shouldRenderMarkdown?: boolean;
 }
 
