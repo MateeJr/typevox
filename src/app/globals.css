@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.font-outfit-semibold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-outfit-normal {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Normal weight */
+  font-style: normal;
+}
+
+.dark-mode-shadow-light {
+  --tw-shadow-color: rgba(200, 200, 200, 0.3); /* Lighter gray with some transparency */
+  --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Word fade-in animation */
+@keyframes word-fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-5px); /* Changed from translateY to translateX */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-word-fade-in {
+  display: inline-block; /* Ensures transform works correctly */
+  opacity: 0; /* Start hidden */
+  animation: word-fade-in 0.3s forwards;
+}
+
+/* Custom Scrollbar Styles */
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;  /* Width of the vertical scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background); /* Track color, matching page background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--foreground-rgb), 0.3); /* Thumb color, semi-transparent foreground */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid var(--background); /* Creates a padding effect, matching track background */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(var(--foreground-rgb), 0.5); /* Darker thumb on hover */
+}
+
+/* For Firefox */
+/* Note: Firefox scrollbar styling is less customizable than Webkit. */
+/* We can set the thumb color and track color. */
+* {
+  scrollbar-width: thin; /* Makes scrollbar thinner, alternative is "auto" or "none" */
+  scrollbar-color: rgba(var(--foreground-rgb), 0.3) var(--background); /* thumb color and track color */
+}
+
+/* Custom Markdown styling for tables */
+.prose table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose table th,
+.prose table td {
+  border: 1px solid;
+  border-color: rgba(var(--foreground-rgb), 0.2);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.prose table th {
+  background-color: rgba(var(--foreground-rgb), 0.05);
+  font-weight: 600;
+}
+
+.prose table tr:nth-child(even) {
+  background-color: rgba(var(--foreground-rgb), 0.02);
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  /* No custom styles needed */
+}

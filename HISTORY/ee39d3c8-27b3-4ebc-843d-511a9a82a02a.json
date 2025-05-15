@@ -1,0 +1,44 @@
+{
+  "messages": [
+    {
+      "id": "d68280f8-34cd-49a8-aaf3-b4d9952b3e0c",
+      "text": "Hey!!",
+      "sender": "user",
+      "cancelled": false
+    },
+    {
+      "id": "52cdb5a3-c1c9-4c09-9742-f583930ef6a6",
+      "text": "Heyy! 👋 Ada yang bisa Veo bantu? 😊",
+      "sender": "ai",
+      "cancelled": false
+    },
+    {
+      "id": "add11097-9d8e-44f7-9d0f-00c76ba26dc1",
+      "text": "kenapa elon musk bikin spaceX",
+      "sender": "user",
+      "cancelled": false
+    },
+    {
+      "id": "ef304409-a5a6-44d3-9313-8c6deebc8aaf",
+      "text": "Elon Musk bikin SpaceX karena dia punya visi buat bikin perjalanan ke luar angkasa lebih murah dan manusia bisa tinggal di planet lain, terutama Mars. Intinya sih, dia pengen masa depan manusia itu multi-planet.",
+      "sender": "ai",
+      "cancelled": false
+    },
+    {
+      "id": "3d9f82c2-4f7d-487d-8d2f-5be1cd63a1df",
+      "text": "pake list angka",
+      "sender": "user",
+      "cancelled": false
+    },
+    {
+      "id": "78bd3ec2-e880-4fd8-acf6-c13dd0ed64e7",
+      "text": "Oke, ini alasan kenapa Elon Musk bikin SpaceX pakai list angka:\n\n1.  **Mimpi Multi-planet:** Elon Musk pengen manusia bisa hidup di lebih dari satu planet, biar nggak punah kalo ada bencana besar di Bumi.\n2.  **Turunin Biaya Perjalanan Angkasa:** Dulu, biaya peluncuran roket mahal banget. SpaceX dibikin buat bikin teknologi roket yang bisa dipakai ulang biar biayanya jauh lebih murah.\n3.  **Akses Angkasa:** Dia pengen bikin akses ke angkasa lebih gampang dan sering buat banyak orang atau perusahaan.\n4.  **Jajah Mars:** Mars jadi target utama SpaceX biar manusia bisa bangun koloni di sana.",
+      "sender": "ai",
+      "cancelled": false
+    }
+  ],
+  "settings": {
+    "isReasonModeActive": false,
+    "searchUIMode": "auto"
+  }
+}
